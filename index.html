@@ -14,7 +14,43 @@
     <title>Bootstrap web page</title>
   </head>
   <body>
-    <h1>Nueva pagina</h1>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-toggler"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="assets/icon.png" alt="logo" width="50" />
+          </a>
+          <ul
+            class="navbar-nav d-flex justify-content-center align-content-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Text 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Text 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Text 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Text 4</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
