@@ -13,13 +13,13 @@ h1 {
 }
 
 .dark-section {
-  color: white;
-  background-color: #1b1b32;
+  color: #fffdf8;
+  background-color: #f27136;
 }
 
 .white-section {
-  color: black;
-  background-color: white;
+  color: #0a0a23;
+  background-color: #fffdf8;
 }
 
 .section-title {
@@ -43,18 +43,37 @@ h1 {
 }
 
 .dark-text {
-  color: black;
+  color: #0a0a23;
 }
 
 .white-text {
-  color: white;
+  color: #fffdf8;
+}
+
+.btn-custom {
+  font-size: 1.1rem;
+  margin: 20px;
+  background-color: #f27136;
+  color: #fffdf8;
+  border-color: #fffdf8;
+}
+
+.btn-custom:hover {
+  background-color: #0a0a23;
+  color: #fffdf8;
+  border-color: #fffdf8;
 }
 
 /* Navbar */
 
 .navbar {
   padding: 2rem;
-  background-color: #f5f6f7;
+  background-color: #fffdf8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar-collapse {
@@ -65,7 +84,7 @@ h1 {
 /* Hero */
 
 .hero {
-  background-color: #f5f6f7;
+  background-color: #fffdf8;
   min-height: 450px;
   text-align: center;
 }
@@ -75,15 +94,19 @@ h1 {
 }
 
 .hero-image {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  /*   width: 200px;
+  height: 200px; */
+  /*   border-radius: 50%; */
   margin: 20px;
 }
 
 .hero-principal h2 {
   font-size: 1.5rem;
   color: #615151;
+}
+
+.perfect-rentals {
+  color: #f27136;
 }
 
 /* About me */
@@ -106,8 +129,8 @@ h1 {
 
 .services i {
   font-size: 2.5rem;
-  color: #7ade30;
-  background-color: #0a0a23;
+  color: #fffdf8;
+  background-color: #f27136;
   padding: 8px 19px;
   border-radius: 50%;
 }
@@ -123,7 +146,7 @@ h1 {
 }
 
 .services .column:hover {
-  color: white;
+  color: #fffdf8;
   background-color: #1b1b32;
 }
 
@@ -131,16 +154,6 @@ h1 {
   font-size: 25px;
   font-weight: bold;
   margin: 10px 0;
-}
-
-.badges-container {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-.badge {
-  margin: 5px;
 }
 
 /* Cards */
@@ -174,7 +187,7 @@ h1 {
 }
 
 .overlay p {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 0;
 }
@@ -191,12 +204,14 @@ h1 {
   opacity: 1;
 }
 
-.overlay .icons-container {
-  display: flex;
+.info-container p {
+  margin: 5px 0;
+  font-size: 12px;
+  color: #333;
 }
 
 .overlay i {
-  color: black;
+  color: #0a0a23;
   font-size: 60px;
   margin: 10px;
 }
@@ -206,6 +221,7 @@ h1 {
 .articles {
   min-height: 500px;
   padding: 30px;
+  background-color: #fffdf8;
 }
 
 .articles .card {
@@ -218,10 +234,21 @@ h1 {
   font-weight: bold;
 }
 
+ul.list-group li.list-group-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.list-group-item:hover {
+  background-color: #0a0a23;
+  color: #fffdf8;
+}
+
 /* Testimonials */
 
 .testimonials {
   padding: 40px 40px 80px 40px;
+  background-color: #fffdf8;
 }
 
 .testimonials .carousel {
@@ -282,9 +309,9 @@ h1 {
 
 .contact .rectangle {
   margin-top: -5rem;
-  background-color: rgb(13, 110, 253);
+  background-color: #fffdf8;
   border-radius: 10px;
-  box-shadow: 0px 1px 4px 1px white;
+  box-shadow: 0px 1px 4px 1px #f27136;
 }
 
 .contact .row {
@@ -294,15 +321,15 @@ h1 {
 }
 
 .contact .description {
-  color: white;
+  color: #0a0a23;
   font-size: 1.2rem;
 }
 
 .contact button {
-  color: white;
+  color: #0a0a23;
   font-weight: bold;
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid #0a0a23;
   padding: 1.25em 2em;
   margin: 10px;
   border-radius: 100px;
@@ -310,18 +337,22 @@ h1 {
 }
 
 .contact button:hover {
-  background-color: white;
-  color: black;
+  background-color: #0a0a23;
+  color: #fffdf8;
 }
 
 .contact button i {
-  color: white;
+  color: #0a0a23;
   font-size: 1.3rem;
   transition: all 0.2s ease-in-out;
 }
 
 .contact button:hover i {
-  color: black;
+  color: #fffdf8;
+}
+
+.contact-us {
+  color: #0a0a23;
 }
 
 /* Footer */
@@ -351,29 +382,29 @@ footer {
   justify-content: center;
   padding: 2px;
   margin: 10px;
-  border: 2px solid white;
+  border: 2px solid #fffdf8;
   border-radius: 50%;
   transition: all 0.2s ease-in;
 }
 
 .social-networks-icons i {
-  color: white;
+  color: #fffdf8;
   font-size: 1.5rem;
   transition: all 0.2s ease-in;
 }
 
 .social-networks-icons a:hover {
-  background-color: white;
-  border: 2px solid rgb(13, 110, 253);
+  background-color: #fffdf8;
+  border: 2px solid #fffdf8;
 }
 
 .social-networks-icons a:hover i {
-  color: black;
+  color: #0a0a23;
 }
 
 .copyright {
   font-size: 15px;
-  color: #aeaeae;
+  color: #fffdf8;
   padding: 20px;
 }
 
